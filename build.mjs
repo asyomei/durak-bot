@@ -15,7 +15,7 @@ await build({
   target: "node20",
   platform: "node",
   format: "cjs",
-  sourcemap: true,
+  sourcemap: "inline",
   packages: "bundle",
   define: {
     NODE_ENV: isProd ? '"production"' : '"development"',
