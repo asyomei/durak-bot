@@ -14,9 +14,9 @@ await build({
   keepNames: true,
   target: "node20",
   platform: "node",
-  format: "cjs",
+  format: "esm",
   sourcemap: "inline",
-  packages: "bundle",
+  packages: "external",
   define: {
     NODE_ENV: isProd ? '"production"' : '"development"',
   },
